@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".SecondActivity">
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Datamu"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:layout_marginTop="20dp"
+            />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="30dp"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="25dp"
+        android:hint="NIM"
+        android:inputType="number"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="24dp"
+        android:hint="Tanggal Lahir"
+        android:inputType="date"
+        android:textSize="16dp" />
+
+    <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob"
+            android:layout_marginTop="50dp"
+            android:text="Insert New Data"
+            android:layout_centerInParent="true"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnInsert"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:text="Update Data"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUpdate"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:text="Delete Existing Data"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDelete"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:text="View Data"
+            android:textSize="16dp" />
+    </RelativeLayout>
